@@ -1,9 +1,11 @@
-class Estudante (var primeiroNome :String?,  var ultimoNome: String?) {
+package alunos
 
-    var codigoAluno = 0
+class Estudante (private var primeiroNome :String?, private var ultimoNome: String?) {
+
+    private var codigoAluno = 0
     var mediaAluno = 0.0
-    var ano = 0
-    val foiAprovado : Boolean
+    private var ano = 0
+    private val foiAprovado : Boolean
         get(){
             if (mediaAluno >=60.0) {
                 return true
